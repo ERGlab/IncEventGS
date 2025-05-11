@@ -179,3 +179,10 @@
 /depthEst_pretrained_model
 output/final/tumvie/mocap-1d-trans/demo/*.npy
 output/final/tumvie/mocap-1d-trans/demo/initialization/*.txt
+output/final/tumvie/mocap-1d-trans/demo/BA/*.txt
+output/final/tumvie/mocap-1d-trans/demo/tracking/*.txt
+output/final/tumvie/mocap-1d-trans/demo/BA/
+output/final/tumvie/mocap-1d-trans/demo/depth_for_new_gs/
+output/final/tumvie/mocap-1d-trans/demo/tracking/
+output/final/tumvie/mocap-1d-trans/demo/initialization/
+output/final/tumvie/mocap-1d-trans/demo/global_BA/*.txt

@@ -147,3 +147,6 @@ CUDA_VISIBLE_DEVICES=3 python main.py --config configs/TUM_VIE/mocap-1d-trans.ya
 <figcaption>  
 </figcaption>
 </div>
+
+跑了大概6个小时还没跑完😂
+
