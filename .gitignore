@@ -169,9 +169,11 @@
 
 # # project temp
 # data/
-# output/
+output/
 # external/
 
-# *.pyc
+*.pyc
 
 *.tar
+/tumvie
+/depthEst_pretrained_model
