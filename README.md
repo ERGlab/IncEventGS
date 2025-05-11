@@ -150,3 +150,19 @@ CUDA_VISIBLE_DEVICES=3 python main.py --config configs/TUM_VIE/mocap-1d-trans.ya
 
 跑了大概6个小时还没跑完😂
 
+<div align="center">
+  <table style="border: none; background-color: transparent;">
+    <tr align="center">
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/global_BA/BA_f020_0000_img.jpg" width="100%" />
+        BA_f020_0000_img
+      </td>
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/global_BA/BA_f020_2400_img.jpg" width="100%" />
+        BA_f020_2400_img
+      </td>      
+    </tr>
+  </table>
+  <figcaption>
+  </figcaption>
+</div>
