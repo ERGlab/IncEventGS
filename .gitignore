@@ -169,7 +169,7 @@
 
 # # project temp
 # data/
-output/
+# output/
 # external/
 
 *.pyc
@@ -177,3 +177,5 @@ output/
 *.tar
 /tumvie
 /depthEst_pretrained_model
+output/final/tumvie/mocap-1d-trans/demo/*.npy
+output/final/tumvie/mocap-1d-trans/demo/initialization/*.txt

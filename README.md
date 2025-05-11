@@ -58,7 +58,7 @@ CUDA_VISIBLE_DEVICES=3 python main.py --config configs/TUM_VIE/mocap-1d-trans.ya
 </figcaption>
 </div>
 
-gsplat应该是一个cuda加速的3dgs库，加载成功后可以看到渲染计算的过程
+[gsplat](https://github.com/nerfstudio-project/gsplat)应该是一个cuda加速的3dgs库，加载成功后可以看到渲染计算的过程
 
 <div align="center">
   <img src="./assets/微信截图_20250511164620.png" width="80%" />
@@ -66,4 +66,84 @@ gsplat应该是一个cuda加速的3dgs库，加载成功后可以看到渲染计
 </figcaption>
 </div>
 
-而结果输出在`output/final/tumvie/mocap-1d-trans/demo`路径
+而结果输出在`output/final/tumvie/mocap-1d-trans/demo`路径:
+<div align="center">
+  <img src="./assets/微信截图_20250511171127.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+大概4500代左右就完成初始化
+
+<div align="center">
+  <img src="./assets/微信截图_20250511171005.png" width="80%" />
+<figcaption>  
+</figcaption>
+</div>
+
+* 下面可视化初始化过程的变换差异
+
+<div align="center">
+  <table style="border: none; background-color: transparent;">
+    <tr align="center">
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_0_vis.jpg" width="100%" />
+        iter_0_vis
+      </td>
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_500_vis.jpg" width="100%" />
+        iter_500_vis
+      </td>      
+    </tr>
+    <tr align="center">
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_1000_vis.jpg" width="100%" />
+        iter_1000_vis
+      </td>
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_1500_vis.jpg" width="100%" />
+        iter_1500_vis
+      </td>      
+    </tr>
+     <tr align="center">
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_2000_vis.jpg" width="100%" />
+        iter_2000_vis
+      </td>
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_2500_vis.jpg" width="100%" />
+        iter_2500_vis
+      </td>      
+    </tr>
+     <tr align="center">
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_3000_vis.jpg" width="100%" />
+        iter_3000_vis
+      </td>
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_3500_vis.jpg" width="100%" />
+        iter_3500_vis
+      </td>      
+    </tr>
+     <tr align="center">
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_4000_vis.jpg" width="100%" />
+        iter_4000_vis
+      </td>
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="./output/final/tumvie/mocap-1d-trans/demo/initialization/iter_4500_vis.jpg" width="100%" />
+        iter_4500_vis
+      </td>      
+    </tr>
+  </table>
+  <figcaption>
+  </figcaption>
+</div>
+
+然后通过sfm等初始化开始进行增量式mapping与tracking
+
+<div align="center">
+  <img src="./assets/微信截图_20250511171306.png" width="80%" />
+<figcaption>  
+</figcaption>
+</div>
